@@ -17,6 +17,7 @@
   --R: 'Roboto', sans-serif;
   --M: 'Montserrat', sans-serif;
   --C: 'Comfortaa', sans-serif;
+  --b: #000;
 }
 
 body {
@@ -31,4 +32,28 @@ body {
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 16px 48px;
+  background: var(--bg);
+  border: none;
+  border-radius: 4px;
+  color: var(--w);
+  font-family: var(--R);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background: var(--lightOrange);
+    color: var(--b);
+  }
+}
+@media (hover: none) {
+  .btn:active {
+    background: var(--lightOrange);
+    color: var(--b);
+  }
 }
